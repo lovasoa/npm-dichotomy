@@ -1,3 +1,4 @@
+var Promise = require("promise");
 var assert = require("assert");
 var dichotomy = require("../dichotomy.js").dichotomy;
 
