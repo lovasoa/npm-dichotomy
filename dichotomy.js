@@ -10,8 +10,8 @@
  * find y such that a < y < b and f(y) = 0
  *
  * @param {Function} f - a function that takes a number and returns a number or a Promise<Number>
- * @param {Number} a - Start of the search interval
- * @param {Number} b - End of the search interval
+ * @param {Number} [a=-Number.MAX_VALUE] Start of the search interval
+ * @param {Number} [b=Number.MAX_VALUE] End of the search interval
  *
  * @return {number|Promise.<number>} y, such that f(y) == 0
  *
