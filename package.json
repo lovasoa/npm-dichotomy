@@ -1,6 +1,6 @@
 {
   "name": "dichotomy",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "implementation of the dichotomic search algorithm. Supports promises",
   "repository": "https://github.com/lovasoa/npm-dichotomy.git",
   "main": "dichotomy.js",

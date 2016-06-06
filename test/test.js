@@ -11,13 +11,16 @@ function x_square_minus_2(x) {
   return x*x - 2;
 }
 
-assert(
-    Math.abs(dichotomy(x_square_minus_2) - Math.sqrt(2)) < 1e-6,
-    "can compute sqrt(2)");
+function isSqrt2(x) {
+    return Math.abs(x - Math.sqrt(2)) < 1e-6;
+}
+
+assert(isSqrt2(dichotomy(x_square_minus_2)), "can compute sqrt(2)");
 
 var promise_square = function (x) {
     return Promise.resolve(x_square_minus_2(x));
 }
 
 dichotomy(promise_square)
+    .then(function(res){assert(isSqrt2(res), "works with promises")})
     .catch(function(err){assert.fail(err)})
