@@ -1,0 +1,14 @@
+{
+  "name": "dichotomy",
+  "version": "1.1.2",
+  "description": "implementation of the dichotomic search algorithm. Supports promises",
+  "main": "dichotomy.js",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "keywords": [
+    "dichotomy"
+  ],
+  "author": "Ophir LOJKINE",
+  "license": "ISC"
+}
